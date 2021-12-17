@@ -11,7 +11,7 @@ seaborn
 textstat   
 pickle
 joblib
-from flask
+flask
 flask_mysqldb
 wtforms
 passlib.hash
