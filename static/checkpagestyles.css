@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SF Pro Display;
+    font-weight: Semibold;
+}
+
+body {
+    background-image: url(/static/images/darken2_chechk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    margin-top: 2%;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    height: 65px;
+}
+
+.navbar .container {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30PX;
+    display: inline;
+}
+
+h2 {
+    display: inline;
+}
+
+nav ul {
+    margin-top: 20Px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20Px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px 10px;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 2px;
+}
+
+.center {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 180px;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    padding-left: 80px;
+}
+
+.center h4 {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.searchbar {
+    width: 60%;
+    height: 50px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: 10%;
+    color: white;
+}
+
+.checkbtn {
+    margin-left: 30px;
+    background: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkbtn:hover {
+    margin-left: 30px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

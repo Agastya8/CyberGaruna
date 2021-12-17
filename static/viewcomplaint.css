@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    font-family: "SF pro display";
+    font-weight: Semibold;
+}
+
+.header {
+    display: flex;
+}
+
+.header .logo {
+    margin-left: 10px;
+    color: white
+}
+
+.header .left_part {
+    margin-left: 75%;
+    color: white
+}
+
+.header .left_part .logout_btn {
+    height: 40px;
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    margin-left: 40px;
+}
+
+.header .left_part .logout_btn:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.cont {
+    align-items: center;
+    padding: 10px;
+    height: 10%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+#bodydesc {
+    border: 2px solid white;
+    align-self: center;
+    margin-left: 15%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.btns {
+    display: flex;
+}
+
+.text {
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.donebtn {
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#grn:hover {
+    background-color: rgb(35, 255, 35);
+    color: white;
+    border-radius: 2px;
+}
+
+#red:hover {
+    background-color: rgb(250, 15, 15);
+    color: white;
+    border-radius: 2px;
+}

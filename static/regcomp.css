@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SF Pro Display;
+    font-weight: Semibold;
+}
+
+body {
+    background-image: url(/static/images/raise_comp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    margin-top: 2%;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    height: 65px;
+}
+
+.navbar .container {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30PX;
+    color: white;
+    display: inline;
+}
+
+h2 {
+    display: inline;
+}
+
+nav ul {
+    margin-top: 20Px;
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20Px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px 10px;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 2px;
+}
+
+.mainbd {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+    margin: 5% 25%;
+    background: rgba(94, 93, 93, 0.5);
+}
+
+.entries {
+    padding: 2%;
+    padding-left: 15%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.headin {
+    margin-left: 20%;
+}
+
+#typec {
+    width: 80%;
+    border-radius: solid 5px;
+    padding: 5px;
+    margin-top: 5%;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none
+}
+
+#typec:focus {
+    border: 1px solid black;
+}
+
+#descc {
+    width: 80%;
+    border-radius: solid 5px;
+    padding: 5px;
+    margin-top: 5%;
+    height: 80px;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none
+}
+
+#descc:focus {
+    border: 1px solid black;
+}
+
+#linkc {
+    width: 80%;
+    border-radius: solid 10px;
+    padding: 5px;
+    margin-top: 5%;
+    height: 40px;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 5px;
+}
+
+#linkc:focus {
+    border: 1px solid black;
+}
+
+#subbtm {
+    margin-left: 2%;
+    width: 15%;
+    border-radius: solid 10px;
+    padding: 5px;
+    margin-top: 5%;
+    margin-left: 32%;
+    height: 40px;
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+}
+
+#subbtm:hover {
+    color: black;
+    background-color: white;
+}

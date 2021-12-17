@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SF pro display";
+    font-weight: Semibold;
+    background-color: black;
+    background-image: url(/static/images/darken_legal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center-stuff {
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    float: left;
+    overflow-y: auto;
+    border: 1px solid white;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.title {
+    font-family: "SF pro display";
+    font-weight: Semibold;
+    color: white;
+    margin-left: 40%;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+}
+
+.header .logo {
+    margin-left: 10px;
+    color: white
+}
+
+.header .left_part {
+    margin-left: 47%;
+    color: white
+}
+
+.header .left_part .logout_btn {
+    height: 40px;
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin-left: 20px;
+    background: transparent;
+    width: 100px;
+}
+
+.header .left_part .logout_btn:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.main {
+    margin-left: 5%;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+th {
+    padding: 2px;
+    color: white;
+    background-color: black;
+}
+
+td {
+    color: white;
+    background-color: #1f1f1f;
+}
+
+td #desc {
+    width: 20px;
+}
+
+table {
+    border-color: white;
+    border-width: 1px;
+}
+
+table,
+tbody,
+tr,
+td {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+#vwbtn {
+    background-color: white;
+    border-width: 1px;
+    height: 40px;
+    width: 80px;
+}
