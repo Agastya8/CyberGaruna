@@ -5,7 +5,7 @@ Live cyberbullying/hate speech detection on twitter with integrated portal.
 This Project was developed for the VIEH Internship (batch 6) by the team `CyberGaruna`
 
 ## Todo
-1. Install the required packages.
+1. Install the required packages mentioned in `Required_Packages.txt`.
 2. Run the `Training.py` to generate Classifier and Vectorizer.
 3. Add `Get_realtime_tweets.py` to fetch real time tweets (or just run to generate real time tweets).
 4. Check if the Ml Model is classifying the real-time tweets or not.
