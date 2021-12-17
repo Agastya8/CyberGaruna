@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Text&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Display&display=swap" rel="stylesheet" />
+    <link href="{{ url_for( 'static',filename='regcomp.css' ) }}" rel="stylesheet" />
+    <title>Registration Complete</title>
+
+
+</head>
+
+<body>
+    <div class="cont">
+        <div class='navbar'>
+            <div class="container">
+                <div class="logo">
+                    <h1>Cyber Garuna</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register_complaint">Bullied?</a></li>
+                        <li><a href="/check_complaint">Check?</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbd">
+        <div class='entries'>
+            <div class='headin'>
+                <h1>Raise a complaint</h1>
+            </div>
+            <form action="/submit_complaint" method="POST">
+                <input required id='typec' name='ctype' placeholder="type of case (ex: bullying)" value={{request.form.ctype}}>
+                <textarea required id='descc' name='cdesc' maxlength="500" placeholder="Description (500 Chars max)" value={{request.form.cdesc}}></textarea>
+                <input required id='linkc' name='clink' placeholder="enter the link of tweet (if possible)" value={{request.form.clink}}>
+                <button type="submit" id='subbtm'>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>

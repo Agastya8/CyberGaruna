@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Text&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Display&display=swap" rel="stylesheet" />
+    <link href="{{ url_for( 'static',filename='viewcomplaint.css' ) }}" rel="stylesheet" />
+
+
+    <title>View Complaint</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h3>Cyber Garuna</h1>
+        </div>
+        <div class="left_part">
+            <h3>Officer: {{session['username']}}</h3>
+            <form action="/logout" method="post">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="cont">
+        <h2 class="text">Id: {{getval}}</h2>
+        <h3 class="text"> Type : {{case_type}}</i>
+        </h3>
+        <h5 class="text"> Link : {{case_proof}}</h5>
+        </i>
+        <div id="bodydesc" style="width:500px; height: 250px; overflow-y: scroll">
+
+            <p id="desc" style=" float:left;color: #666666; width:700px; font-family: Candara,Trebuchet MS,sans-serif; font-size: 16px; font-weight: bold; border-right: thin dotted #666666; line-height: 18px;">
+
+                {{case_desc}}
+
+            </p>
+
+        </div>
+        <div class="btns">
+
+            <form action="/comp_add_res" method="post">
+                <button id="grn" class="donebtn" type="submit" name="compres" value={{getval}}>Review</button>
+            </form>
+            <form action="/comp_del_res" method="post">
+                <button id="red" class="donebtn" type="submit" name="compres" value={{getval}}>Ignore</button>
+            </form>
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

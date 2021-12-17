@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration success</title>
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='Registration_success.css')}}">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class='navbar'>
+        <div class="container">
+            <div class="logo">
+                <h1>Cyber Garuna</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register_complaint">Bullied?</a></li>
+                    <li><a href="/check_complaint">Check?</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <div class="overlay">
+            <div class="head">
+                <h1 style="text-align:center; font-size: 40px; color: white "><ins> <b>Raise a Complaint</b></ins> </h1>
+            </div>
+            <div class="text">
+                <div class="overlay1">
+                    <form method="post" action="/">
+                        <h2> Your Complaint has been registered!</h2>
+                        <h3> Unique ID is : <i style="color:red;">{{unid}}</i></h3>
+                        <p> Do not refresh,Please Screenshot or write down the ID which you will be using to check the status </p>
+                        <button id="donebtn" type="submit" style="height:50px;width:100px;margin-top: 20px;margin-left: 4px;">DONE</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>

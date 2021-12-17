@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='rejected_cases.css') }}">
+</head>
+
+
+
+
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h3>Cyber Garuna</h3>
+            <h5>Officer: {{session['username']}}</h5>
+        </div>
+        <div class="left_part">
+            <nav>
+                <ul>
+                    <form action="/dashboard" method="post">
+                        <button type="submit" class="logout_btn">Ongoing</button>
+                    </form>
+                    <form action="/accepted" method="post">
+                        <button type="submit" class="logout_btn">Accepted</button>
+                    </form>
+                    <form action="/rejected" method="post">
+                        <button type="submit" class="logout_btn">Rejected</button>
+                    </form>
+                    <form action="/logout" method="post">
+                        <button type="submit" class="logout_btn">Logout</button>
+                    </form>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+    </div>
+    <h3 class="title"> Here's the List of all the Rejected cases</h3>
+    <div class="main">
+        <div class="center-stuff">
+            <table id="data" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Unique Id</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Accepted by</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for val in data1 %}
+                    <tr>
+                        <td style="padding: 2%; width:120px;">{{val['id']}}</td>
+                        <td style="padding: 2%; width:120px;">{{val['ctype']}}</td>
+                        <td style="height:40px; width:20px">{{val['cdescription']}}</td>
+                        <td style="height:40px; width:20px">{{val['officer']}}</td>
+
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
