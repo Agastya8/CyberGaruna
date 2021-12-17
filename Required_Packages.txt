@@ -1,0 +1,27 @@
+tweepy
+time
+json
+csv
+pandas
+sklearn
+numpy
+nltk
+matplotlib
+seaborn
+textstat   
+pickle
+joblib
+from flask
+flask_mysqldb
+wtforms
+passlib.hash
+functools
+flask_login
+random
+
+
+*Might need additional packages based on your system config/env*
+    
+
+
+
